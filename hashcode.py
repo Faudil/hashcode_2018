@@ -9,6 +9,7 @@ class Vehicle:
     def __init__(self):
         self._avail = True
         self._rides = []
+        self._steps = 0
 
     def total_ride_length(self, ride):
         x_b, y_b = ride._begin
