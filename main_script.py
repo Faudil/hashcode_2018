@@ -3,6 +3,7 @@
 import sys
 
 from hashcode import *
+from real_algo import *
 
 def parse_file(file_name):
     with open(file_name, "r") as f:
@@ -19,7 +20,7 @@ def main():
     if len(sys.argv) <= 1:
         return 0
     vehicles, rides, max_step = parse_file(sys.argv[1])
-    real
+    real_solve(vehicles, rides, max_step)
 
 if __name__ == "__main__":
     main()
