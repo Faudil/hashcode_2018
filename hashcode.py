@@ -18,5 +18,5 @@ class Vehicle:
         sum += abs(y_p - y_b)
         sum += abs(x_b - x_e)
         sum += abs(y_b - y_e)
-        print(sum)
+        return sum
 
