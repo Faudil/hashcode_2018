@@ -15,7 +15,7 @@ class Vehicle:
 
 def parse_file(file_name):
     with open(file_name, "r") as f:
-        fl = f.readlines().split(" ")
+        fl = str(f.readlines()).split(" ")
         vehicles = [Vehicle() for i in range(0, int(fl[2]))]
         rides = []
         for line in f.readlines():
