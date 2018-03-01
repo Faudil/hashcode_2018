@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 for f in $(find tests -iname "*.in")
 do
-	./main_script.py $f > $f.out
+	time ./main_script.py $f > $f.out &
 done
