@@ -4,6 +4,11 @@ class Ride:
         self._end = end
         self._start = start
         self._finish = finish
+        self._taken = False
+    def __str__(self):
+        return self._begin + " " + self._end + " | " + self._start + " " + self._finish
+    def __repr__(self):
+        return str(self._begin) + " " + str(self._end) + " | " + str(self._start) + " " + str(self._finish)
 
 class Vehicle:
     def __init__(self):

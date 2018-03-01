@@ -3,7 +3,11 @@
 import sys
 
 from hashcode import *
+<<<<<<< HEAD
 from algo import *
+=======
+from real_algo import *
+>>>>>>> a109ccf7b7f5d22d7c9b66db3a4674d12caa7fa8
 
 def parse_file(file_name):
     with open(file_name, "r") as f:
@@ -26,6 +30,7 @@ def main():
         for i in range(0, len(car._rides)) :
             print(" " + str(car._rides[i]), end='')
         print("")
+    real_solve(vehicles, rides, max_step)
 
 if __name__ == "__main__":
     main()
