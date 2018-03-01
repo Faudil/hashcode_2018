@@ -2,20 +2,11 @@
 
 import sys
 
-class Ride:
-    def __init__(self, begin, end, start, finish):
-        _begin = begin
-        _end = end
-        _start = start
-        _finish = finish
-
-class Vehicle:
-    def __init__(self):
-        _avail = True
+from hashcode import *
 
 def parse_file(file_name):
     with open(file_name, "r") as f:
-        fl = str(f.readlines()).split(" ")
+        fl = str(f.readline()).split(" ")
         vehicles = [Vehicle() for i in range(0, int(fl[2]))]
         rides = []
         for line in f.readlines():
@@ -28,6 +19,8 @@ def main():
     if len(sys.argv) <= 1:
         return 0
     vehicles, rides = parse_file(sys.argv[1])
+    for ride in rides:
+        print(ride._begin)
 
 if __name__ == "__main__":
     main()
