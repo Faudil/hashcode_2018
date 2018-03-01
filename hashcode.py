@@ -15,7 +15,7 @@ class Vehicle:
     def total_ride_length(self, ride):
         x_b, y_b = ride._begin
         x_e, y_e = ride._end
-        x_p, y_p = _pos
+        x_p, y_p = self._pos
         sum = abs(x_p - x_b)
         sum += abs(y_p - y_b)
         sum += abs(x_b - x_e)
